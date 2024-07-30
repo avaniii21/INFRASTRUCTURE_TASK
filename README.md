@@ -58,20 +58,26 @@ infrastructure_project/
     
 
 ## Docker Setup (ACTUAL SETUP)
-Once you have setup your directory with the above file structure you can proceed wirh the Docker setup.
+Once you have set up your directory with the above file structure, you can proceed with the Docker setup.
 
-
-1. Build the Docker containers:
-   -> docker-compose build
-   This command builds the Docker images for both the application and the tests as defined in the `docker-compose.yml` file.
+1. **Build the Docker containers**:
+    ```bash
+    docker-compose build
+    ```
+    This command builds the Docker images for both the application and the tests as defined in the `docker-compose.yml` file.
     
-2. Run the application:
-   -> docker-compose up app
-   This command starts the application container, which runs the main script and processes the data.
+2. **Run the application**:
+    ```bash
+    docker-compose up app
+    ```
+    This command starts the application container, which runs the main script and processes the data.
 
-3. Run the tests:
-   -> docker-compose up tests
-   This command starts the test container, which runs the unit tests to ensure the application's functionality is correct.
+3. **Run the tests**:
+    ```bash
+    docker-compose up tests
+    ```
+    This command starts the test container, which runs the unit tests to ensure the application's functionality is correct.
+
 
      
 ## Requirements
