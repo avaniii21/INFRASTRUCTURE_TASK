@@ -35,7 +35,7 @@ infrastructure_project/
 
 
 
-### Explanation for the above files
+## Explanation for the above files
 
 -> **Dockerfile**: Defines the Docker image for the main application, including the base image, working directory, dependencies installation, and command to run the application.
 
