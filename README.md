@@ -13,24 +13,39 @@ This project processes customer order data from a CSV file and performs the foll
 
 infrastructure_project/
 ├── Dockerfile
+
 ├── Dockerfile.tests
+
 ├── README.md
+
 ├── docker-compose.yml
+
 ├── main.py
+
 ├── orders_1500.csv
+
 ├── requirements.txt
+
 └── test_main.py
+
 
 
 ### Explanation for the above files
 
 -> **Dockerfile**: Defines the Docker image for the main application, including the base image, working directory, dependencies installation, and command to run the application.
+
 -> **Dockerfile.tests**: Similar to the main Dockerfile, but configured to run unit tests.
+
 -> **docker-compose.yml**: Orchestrates the multi-container Docker application, specifying the services for the main application and tests.
+
 -> **main.py**: The primary Python script that reads the CSV file and performs the data processing tasks such as calculating revenues and identifying top customers.
+
 -> **orders_1500.csv**: The dataset used for processing. It contains order data with columns like order_id, customer_id, order_date, product_id, product_name, product_price, and quantity.
+
 -> **requirements.txt**: Lists the Python libraries required to run the application, such as pandas.
+
 -> **test_main.py**: Contains unit tests to validate the functionality of the main script.
+
 
 
 ## Local Setup (OPTIONAL)
